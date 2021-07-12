@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm" *ngFor="let subcategory of categoryData.subcategories">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../assets/images/{{subcategory.image}}" alt=""
+          onerror="this.src='../assets/images/img-placeholder-square-300x300.jpg'">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary _btn">
+            {{ subcategory.name }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

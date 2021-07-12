@@ -1,0 +1,17 @@
+
+
+<div class="container" >
+  <div class="row" >
+    <div class="col-sm" *ngFor="let category of catalogCountryData.categories">
+      <div class="card" style="width: 18rem;" >
+        <img class="card-img-top" src="../assets/images/{{category.image}}" alt=""
+          onerror="this.src='../assets/images/img-placeholder-square-300x300.jpg'">
+        <div class="card-body">
+          <button (click)="getCategorySubData(category)" type="button" class="btn btn-primary _btn">
+            {{ category.name }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
